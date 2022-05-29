@@ -1,8 +1,5 @@
+const str = "So funny";
 
+const word = str.slice(3, 8);
 
-let num = 50;
-
-while (num <= 55) {
-    console.log(num);
-    num++;
-}
+console.log(word);
