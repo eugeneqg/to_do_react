@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/eugeneqg/to_do_react/static/css/main.3e70b6bc.css",
+    "main.js": "/eugeneqg/to_do_react/static/js/main.31adb2cd.js",
+    "static/media/back.png": "/eugeneqg/to_do_react/static/media/back.a80a63ad987bf021fe67.png",
+    "index.html": "/eugeneqg/to_do_react/index.html",
+    "main.3e70b6bc.css.map": "/eugeneqg/to_do_react/static/css/main.3e70b6bc.css.map",
+    "main.31adb2cd.js.map": "/eugeneqg/to_do_react/static/js/main.31adb2cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e70b6bc.css",
+    "static/js/main.31adb2cd.js"
+  ]
+}
