@@ -9,7 +9,7 @@ class App extends Component {
         super(props);
           this.state = {
             data: [
-                {label: "Buy some flowers!", important: true, id: 1, check: false},
+                {label: "Buy some flowers", important: true, id: 1, check: false},
                 {label: "Read a new book", important: false, id: 2, check: false},
                 {label: "Watch a new TV show", important: false, id: 3, check: false}
             ],
