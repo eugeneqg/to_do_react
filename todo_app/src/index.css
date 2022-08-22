@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+
+  height: 1200px;
+}
+
+html {
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Cardo', serif;
+}
