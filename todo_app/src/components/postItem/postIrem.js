@@ -7,7 +7,9 @@ export default class PostItem extends Component {
         super(props);
 
         this.state = {
-            checkbox: false
+            checkbox: false,
+
+            classes: "post"
         }
     }
 
@@ -18,20 +20,24 @@ export default class PostItem extends Component {
 
         let classes = "post";
 
-
-
         if (important) {
             classes = classes + " important-item";
         }
 
         if (check) {
+
             classes = classes + " deactivated";
         }
+
+        // if (important && check) {
+        //     classes = "post deactivated";
+        // }
 
         const checked = (e) => {
             if (e.target.checked) {
                 onChecked();
-            } else {
+            } 
+            else {
                 onChecked();
             }
         }
@@ -39,7 +45,7 @@ export default class PostItem extends Component {
         return(
             <div className="container">
                 <div className={classes}>
-                    <input onChange={checked} className="checkbox" type="checkbox"/>
+                    <input defaultChecked={check} onChange={checked} className="checkbox" type="checkbox"/>
                     <span onClick={onToggleImportant} className="post-text">{label}</span>
                 </div>
             </div>

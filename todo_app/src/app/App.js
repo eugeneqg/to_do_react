@@ -95,7 +95,8 @@ class App extends Component {
             return posts
           }
             return posts.filter(post => {
-              return post.label.indexOf(word) > -1;
+              const postLabel = post.label.toLowerCase();
+              return postLabel.indexOf(word) > -1;
             })
         }
 
