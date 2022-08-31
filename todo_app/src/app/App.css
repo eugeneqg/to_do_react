@@ -1,3 +1,15 @@
 .container {
   margin: 0px 135px;
 }
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0px 20px;
+  }
+}

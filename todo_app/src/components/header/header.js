@@ -1,35 +1,30 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css"
 
-export default class Header extends Component {
+const Header = (props) => {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            text: ""
+    const [text, setText] = useState("");
+
+    useEffect(() => {
+        document.querySelector(".search").addEventListener("change", detectWord);
+    })
+
+    const detectWord = (e) => {
+            let data = e.target.value;
+
+            data = data.toLowerCase();
+
+            setText(data)
+
+            props.onSearch(data);
         }
-
-        this.detectWord = (e) => {
-            const data = e.target.value;
-
-            this.setState(() => {
-                return {
-                    text: data
-                }
-            })
-
-            this.props.onSearch(data);
-        }
-    }
-
-    render() {
 
         return (
             <div className="back">
             <header className="container">
                 <div className="flex">
                     <span className="logo">mytodos</span>
-                    <input onChange={this.detectWord} className="search" type="text" placeholder="Search"></input>
+                    <input onChange={detectWord} className="search" type="text" placeholder="Search"></input>
                 </div>
                 <div className="banner-text">All todos right at your hand</div>
                 <button onClick={ () => {
@@ -42,6 +37,5 @@ export default class Header extends Component {
             </div>
         )
 
-    }
-
 }
+export default Header;

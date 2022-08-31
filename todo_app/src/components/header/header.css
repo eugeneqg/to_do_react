@@ -6,16 +6,13 @@
 }
 
 .back {
-    background-size: cover;
-    height: 400px;
+    /* background-size: cover; */
+    width: 100%;
+    min-height: 400px;
     background-image: url("/Users/evgeniisypchenko/Desktop/Work/todo_app/public/img/back.png");
     background-repeat: no-repeat;
     margin-bottom: 32px;
 }
-
-.container {
-    margin: 0px 135px;
-  }
 
 .logo {
     display: inline-block;
@@ -65,4 +62,78 @@
 button:hover {
     /* background-color: #F4DA53; */
     box-shadow: 0px 4px 20px rgba(212, 180, 11, 0.4)
+}
+
+@media (max-width: 900px) {
+    .back {
+        background-size: cover;
+        width: 100%;
+        min-height: 400px;
+        background-image: url("/Users/evgeniisypchenko/Desktop/Work/todo_app/public/img/back.png");
+        background-repeat: no-repeat;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .back {
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        background-image: url("/Users/evgeniisypchenko/Desktop/Work/todo_app/public/img/back.png");
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        display: inline-block;
+        font-family: "Cabin", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 25px; 
+    }
+
+    .search {
+        width: 200px;
+        height: 32px;
+        background-color: white;
+        opacity: 0.5;
+        margin-top: 32px;
+        border-radius: 4px; 
+        border: none;
+        text-indent: 16px;
+        font-family: 'Cabin', sans-serif;
+    }
+
+    .banner-text {
+        font-family: 'Cabin', sans-serif;
+        font-size: 32px;
+        width: 240px;
+        line-height: 40px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-button {
+        background-color: #F4DA53;
+        border: none;
+        border-radius: 4px;
+
+        display: flex;
+    
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        padding: 16px 0px;
+
+        width: 100%;
+        
+        justify-content: center;
+        margin: 0px auto;
+        box-shadow: none;
+        transition:  box-shadow linear 0.2s;
+    
+    }
+
 }

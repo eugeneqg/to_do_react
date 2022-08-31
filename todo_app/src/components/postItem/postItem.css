@@ -5,7 +5,7 @@
     width: 700px;
     background-color: white;
     margin-bottom: 32px;
-    margin-left: -30px;
+    margin-left: 100px;
 
     border-radius:4px;
 
@@ -38,4 +38,57 @@
     text-decoration: line-through;
 
 
+}
+
+@media (max-width: 900px) {
+
+    .post {
+        width: 570px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .post { 
+
+        display: flex;
+        /* align-items: center; */
+        width: 100%;
+        min-width: 350px;
+        background-color: white;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-left: 0px;
+
+    
+        border-radius:4px;
+    
+        box-shadow: 0px 10px 40px rgba(0, 0, 10, 0.1);
+    }
+
+    .post .post-text {
+        display: inline-block;
+        font-family: 'Cabin', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        
+        padding: 20px 20px;
+    }
+    
+    .checkbox {
+        width: 24px ;
+        height: 24px;
+        margin-left: 20px;
+    }
+
+    .deactivated {
+
+        background-color: rgb(238, 236, 236);
+        box-shadow: none;
+        text-decoration: line-through;
+    
+    
+    }
+    
 }
